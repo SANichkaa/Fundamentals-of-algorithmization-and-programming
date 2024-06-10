@@ -14,11 +14,7 @@ private:
         Node *next;
         int64_t key;
         T value;
-        Node(int64_t key, T value)
-            : key(key)
-            , value(value)
-            , next(nullptr)
-        {}
+        Node(int64_t key, T value): key(key), value(value), next(nullptr) {}
     };
 
     Node *top;

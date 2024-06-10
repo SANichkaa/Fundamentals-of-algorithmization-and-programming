@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include <QTimer>
-#include "CircleDeque.h"
+#include "circledeque.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -22,14 +22,13 @@ public:
 private:
     void addPathToImage();
     void addName();
-    void addDate();
 
 private slots:
-    void on_prevButton_clicked();
+    void on_prevButton_2_clicked();
 
-    void on_nextButton_clicked();
+    void on_nextButton_2_clicked();
 
-    void on_autoButton_clicked();
+    void on_autoButton_2_clicked();
 
     void updateAuto();
 
@@ -37,10 +36,8 @@ private:
     Ui::MainWindow *ui;
     CircleDeque<QString> pathToImage;
     CircleDeque<QString> name;
-    CircleDeque<QString> date;
     CircleDeque<QString>::iterator iterImage;
     CircleDeque<QString>::iterator iterName;
-    CircleDeque<QString>::iterator iterDate;
     QTimer *autoTimer;
 };
 #endif // MAINWINDOW_H

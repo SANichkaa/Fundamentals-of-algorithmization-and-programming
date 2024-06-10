@@ -17,7 +17,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::recursiveDisplayTree(QStandardItem *parentItem, tree_node *node)
+void MainWindow::recursiveDisplayTree(QStandardItem *parentItem, treeNode *node)
 {
     if (node == nullptr)
         return;

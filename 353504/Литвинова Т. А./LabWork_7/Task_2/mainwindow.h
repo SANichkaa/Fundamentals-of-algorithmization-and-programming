@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include <QStandardItem>
 #include <QMessageBox>
-#include "my_tree.h"
+#include "myTree.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,7 +19,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    void recursiveDisplayTree(QStandardItem* parentItem, tree_node* node);
+    void recursiveDisplayTree(QStandardItem* parentItem, treeNode* node);
 
 private slots:
     void on_bnt_add_item_clicked();
@@ -40,7 +40,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    my_tree tree;
+    myTree tree;
     QStandardItemModel* model;
 };
 #endif // MAINWINDOW_H

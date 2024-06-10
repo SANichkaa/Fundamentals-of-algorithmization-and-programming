@@ -16,9 +16,9 @@ AVLTree<T>::~AVLTree()
 }
 
 template<typename T>
-size_t AVLTree<T>::height(Node *node) const // Высота определённого узла
+size_t AVLTree<T>::height(Node *node) const
 {
-    return (node) ? node->height : 0;
+    return node ? node->height : 0;
 }
 
 template<typename T>
@@ -44,17 +44,15 @@ void AVLTree<T>::insert(int64_t key, T value)
 }
 
 template<typename T>
-int64_t AVLTree<T>::balanceFactor(Node *node) const // Если -1, 0, 1, то дерево сбалансированное
+int64_t AVLTree<T>::balanceFactor(Node *node) const
 {
     return height(node->right) - height(node->left);
 }
 
 template<typename T>
-void AVLTree<T>::fixHeight(Node *node) // Функция пересчёта высоты определённого узла
+void AVLTree<T>::fixHeight(Node *node)
 {
-    node->height = ((height(node->left) > height(node->right)) ? height(node->left)
-                                                               : height(node->right))
-                   + 1;
+    node->height = ((height(node->left) > height(node->right)) ? height(node->left) : height(node->right)) + 1;
 }
 
 template<typename T>
@@ -75,7 +73,7 @@ typename AVLTree<T>::Node *AVLTree<T>::rotateRight(Node *node)
         rightBalance = h                  rightBalance = h + 1
     */
 
-    Node *newGeneralNode = node->left; // Balance = -1
+    Node *newGeneralNode = node->left;
     node->left = newGeneralNode->right;
     newGeneralNode->right = node;
     fixHeight(node);
@@ -86,21 +84,7 @@ typename AVLTree<T>::Node *AVLTree<T>::rotateRight(Node *node)
 template<typename T>
 typename AVLTree<T>::Node *AVLTree<T>::rotateLeft(Node *node)
 {
-    /*
-                node                                      newGeneralNode
-             /        \                                 /                \
-            A      newGeneralNode         =>          node                C
-                      /      \                      /      \
-                     B        C                    A        B
-        
-        h(A) = h
-        h(B) = h + 1
-        h(C) = h + 1
-        leftBalance = h                             leftBalance = h + 2
-                                        =>      
-        rightBalance = h + 2                        rightBalance = h + 1
-    */
-    Node *newGeneralNode = node->right; // Balance = 0
+    Node *newGeneralNode = node->right;
     node->right = newGeneralNode->left;
     newGeneralNode->left = node;
     fixHeight(node);
@@ -111,17 +95,6 @@ typename AVLTree<T>::Node *AVLTree<T>::rotateLeft(Node *node)
 template<typename T>
 typename AVLTree<T>::Node *AVLTree<T>::balance(Node *node)
 {
-    /*
-                node                                                    S
-              /      \               большой левый поворот        /           \
-             A      node->right               =>                node      node->right
-                      /     \                                  /    \        /   \
-                     S       D                                A      B      C     D
-                   /   \
-                  B     C
-
-        h(S) > h(D) - Balance(node->right) < 0
-    */
     fixHeight(node);
     if (balanceFactor(node) == 2) {
         if (balanceFactor(node->right) < 0) // большой левый поворот
@@ -143,9 +116,7 @@ typename AVLTree<T>::Node *AVLTree<T>::balance(Node *node)
 }
 
 template<typename T>
-typename AVLTree<T>::Node *AVLTree<T>::insert(Node *node,
-                                              int64_t key,
-                                              T value) // Вставка в дерево с корнем node
+typename AVLTree<T>::Node *AVLTree<T>::insert(Node *node, int64_t key, T value) // Вставка в дерево с корнем node
 {
     if (node == nullptr) {
         ++_size;
@@ -221,11 +192,9 @@ typename AVLTree<T>::Node *AVLTree<T>::remove(Node *node, int64_t key)
     if (key < node->key) {
         node->left = remove(node->left, key);
     }
-
     else if (key > node->key) {
         node->right = remove(node->right, key);
     }
-
     else { // Элемент найден
         Node *left = node->left;
         Node *right = node->right;

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>606</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QGraphicsView" name="graphicsView"/>
+    </item>
+    <item row="0" column="1">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Центр масс:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="Plohad">
+         <property name="text">
+          <string>-----------------</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Периметр:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="Zenter_mass">
+         <property name="text">
+          <string>------------------</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Площадь:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="Perimetr">
+         <property name="text">
+          <string>------------------</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>Отбой</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Четырехугольники</string>
+    </property>
+    <addaction name="Rect"/>
+    <addaction name="Squart"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Треугольник</string>
+    </property>
+    <addaction name="Triangl_pram"/>
+    <addaction name="Triangl_ravn_bedr"/>
+    <addaction name="Triangl_ravn_stor"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Звезды</string>
+    </property>
+    <addaction name="Fife_star"/>
+    <addaction name="Six_star"/>
+    <addaction name="Eught_star"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>Инструменты</string>
+    </property>
+    <addaction name="Deleter"/>
+    <addaction name="Resize"/>
+    <addaction name="Move"/>
+    <addaction name="action"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>Круг и эллипс</string>
+    </property>
+    <addaction name="Ellips"/>
+    <addaction name="Krug"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="Rect">
+   <property name="text">
+    <string>Прямоугольник</string>
+   </property>
+  </action>
+  <action name="Squart">
+   <property name="text">
+    <string>Квадрат</string>
+   </property>
+  </action>
+  <action name="Triangl_pram">
+   <property name="text">
+    <string>Треугольник_прямой</string>
+   </property>
+  </action>
+  <action name="Triangl_ravn_bedr">
+   <property name="text">
+    <string>Треугольник_равнобедренный</string>
+   </property>
+  </action>
+  <action name="Triangl_ravn_stor">
+   <property name="text">
+    <string>Треугольник_равносторонний</string>
+   </property>
+  </action>
+  <action name="Fife_star">
+   <property name="text">
+    <string>Пятиконечная</string>
+   </property>
+  </action>
+  <action name="Six_star">
+   <property name="text">
+    <string>Шестиконечная</string>
+   </property>
+  </action>
+  <action name="Eught_star">
+   <property name="text">
+    <string>Восьмиконечная</string>
+   </property>
+  </action>
+  <action name="Deleter">
+   <property name="text">
+    <string>Удаление</string>
+   </property>
+  </action>
+  <action name="Resize">
+   <property name="text">
+    <string>Изменение размеров</string>
+   </property>
+  </action>
+  <action name="Move">
+   <property name="text">
+    <string>Перемещение</string>
+   </property>
+  </action>
+  <action name="Ellips">
+   <property name="text">
+    <string>Эллипс</string>
+   </property>
+  </action>
+  <action name="Krug">
+   <property name="text">
+    <string>Круг</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>Поворот</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

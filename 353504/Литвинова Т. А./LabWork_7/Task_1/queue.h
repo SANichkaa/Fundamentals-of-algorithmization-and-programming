@@ -1,4 +1,4 @@
-#ifndef QUEUE_H
+/*#ifndef QUEUE_H
 #define QUEUE_H
 
 #include <ctime>
@@ -145,6 +145,45 @@ private:
     Node *head;  //указатель на начало очереди
     Node *tail;  //указатель на конец очереди
     int size;   //количество элементов в очереди
+
+};
+
+#endif // QUEUE_H
+*/
+
+#ifndef QUEUE_H
+#define QUEUE_H
+
+#include <ctime>
+#include <cstdlib>
+#include <QRandomGenerator>
+
+class Queue {
+public:
+    Queue();
+    ~Queue();
+
+    struct Node {
+        int value;
+        Node *nextNode;
+        Node(int value);
+    };
+
+    void clearQueue();
+    bool isEmpty() const;
+    int getSize() const;
+    int front() const;
+    int back() const;
+    void enqueue(int value);
+    int dequeue();
+    void fillQueueRandomly(int x);
+    int peekAt(int index) const;
+    void moveMinToFront();
+
+private:
+    Node *frontNode;
+    Node *backNode;
+    int queueSize;
 
 };
 

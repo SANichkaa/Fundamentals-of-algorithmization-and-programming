@@ -78,8 +78,8 @@
     <property name="geometry">
      <rect>
       <x>410</x>
-      <y>20</y>
-      <width>201</width>
+      <y>40</y>
+      <width>281</width>
       <height>51</height>
      </rect>
     </property>
@@ -90,7 +90,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Count of keys:</string>
+     <string>Количество ключей:</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -99,8 +99,8 @@
    <widget class="QSpinBox" name="spinBox_size">
     <property name="geometry">
      <rect>
-      <x>620</x>
-      <y>30</y>
+      <x>600</x>
+      <y>110</y>
       <width>91</width>
       <height>31</height>
      </rect>
@@ -121,9 +121,9 @@
    <widget class="QPushButton" name="pushButton1">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>90</y>
-      <width>141</width>
+      <x>590</x>
+      <y>150</y>
+      <width>121</width>
       <height>32</height>
      </rect>
     </property>
@@ -134,16 +134,16 @@
      </font>
     </property>
     <property name="text">
-     <string>Random</string>
+     <string>Рандом</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_p_and_n">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>140</y>
-      <width>231</width>
-      <height>32</height>
+      <x>590</x>
+      <y>190</y>
+      <width>121</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
@@ -153,7 +153,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Positive/Negative</string>
+     <string>+/-</string>
     </property>
    </widget>
   </widget>

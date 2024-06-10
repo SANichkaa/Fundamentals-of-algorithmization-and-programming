@@ -5,15 +5,10 @@ struct Worker
 {
 
     int age;
-
     char gender;
-
-    bool works = false;
-
+    bool works;
     double salary;
-
     char* name;
-
     int vacationDays[2];
 
 };

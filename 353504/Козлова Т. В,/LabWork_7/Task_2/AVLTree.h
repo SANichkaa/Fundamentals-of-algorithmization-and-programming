@@ -10,18 +10,13 @@ class AVLTree
 public:
     struct Node
     {
-        int64_t key;      // ключ узла
-        T value;          // значение узла
-        Node *left;       // указатель на левое поддерево
-        Node *right;      // указатель на правое поддерево
-        size_t height{1}; // высота поддерва в данном узле
+        int64_t key;
+        T value;
+        Node *left;
+        Node *right;
+        size_t height{1};
 
-        Node(int64_t key, T value)
-            : key(key)
-            , value(value)
-            , left(nullptr)
-            , right(nullptr)
-        {}
+        Node(int64_t key, T value) : key(key), value(value), left(nullptr), right(nullptr) {}
     };
 
 private:

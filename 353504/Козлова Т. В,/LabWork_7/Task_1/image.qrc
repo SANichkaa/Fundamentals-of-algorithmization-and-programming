@@ -1,16 +1,19 @@
 <RCC>
     <qresource prefix="/new/img">
-        <file>image/Andropov.jpg</file>
-        <file>image/Breznev.jpeg</file>
-        <file>image/Chernenko.jpg</file>
-        <file>image/Gorbachev.jpg</file>
-        <file>image/Hryschev.jpg</file>
-        <file>image/Lenin.jpg</file>
-        <file>image/Malenkov.jpg</file>
         <file>image/Stalin.jpg</file>
-        <file>image/next.png</file>
-        <file>image/prev.png</file>
-        <file>image/background.jpg</file>
-        <file>image/auto.png</file>
+        <file>image/Malenkov.jpg</file>
+        <file>image/Lenin.jpg</file>
+        <file>image/Hryschev.jpg</file>
+        <file>image/Gorbachev.jpg</file>
+        <file>image/Chernenko.jpg</file>
+        <file>image/Breznev.jpeg</file>
+        <file>image/Andropov.jpg</file>
+        <file>img/zhulien.jpg</file>
+        <file>img/vetchina.jpg</file>
+        <file>img/sirnaya.jpg</file>
+        <file>img/polovinki.jpg</file>
+        <file>img/krevetki.jpg</file>
+        <file>img/chicken-bomboni.jpg</file>
+        <file>img/bavarskaya.jpg</file>
     </qresource>
 </RCC>

@@ -42,7 +42,7 @@ void Stack<T>::push(int64_t key, T value)
 template<typename T>
 void Stack<T>::pop(int64_t &key, T &value)
 {
-    while (top == nullptr) {
+    if (top == nullptr) {
         return;
     }
 
@@ -56,7 +56,7 @@ void Stack<T>::pop(int64_t &key, T &value)
 template<typename T>
 void Stack<T>::pop()
 {
-    while (top == nullptr) {
+    if (top == nullptr) {
         return;
     }
 

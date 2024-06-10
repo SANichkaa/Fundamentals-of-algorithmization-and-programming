@@ -11,13 +11,13 @@ CONFIG += c++17
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    my_tree.cpp \
-    tree_node.cpp
+    myTree.cpp \
+    treeNode.cpp
 
 HEADERS += \
     mainwindow.h \
-    my_tree.h \
-    tree_node.h
+    myTree.h \
+    treeNode.h
 
 FORMS += \
     mainwindow.ui

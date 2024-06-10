@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "my_hash_table.h"
+#include "myhashtable.h"
 #include <QTableWidget>
 
 QT_BEGIN_NAMESPACE
@@ -28,7 +28,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    MyHashTable *htable;
+    MyHashTable *hashTable;
     MyHashTable *positiveTable;
     MyHashTable *negativeTable;
 

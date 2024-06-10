@@ -15,25 +15,25 @@ QT_END_NAMESPACE
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
-  
-public:
-  MainWindow();
 
-  void Redraw();
+public:
+    MainWindow();
+
+    void Redraw();
 
 private slots:
-  void onClick();
-  void fullUpdateVisVector();
-  void searchUpdateVisVector();
-  void updateVisVector();
-  void playClicked();
-  void playTicked();
+    void onClick();
+    void fullUpdateVisVector();
+    void searchUpdateVisVector();
+    void updateVisVector();
+    void playClicked();
+    void playTicked();
 
 protected:
-  Ui::MainWindow *ui;
-  VisVector *visvec;
-  QGraphicsScene *scene;
-  QTimer *playTimer;
+    Ui::MainWindow *ui;
+    VisVector *visvec;
+    QGraphicsScene *scene;
+    QTimer *playTimer;
 
-  bool isPlaying = false;
+    bool isPlaying = false;
 };

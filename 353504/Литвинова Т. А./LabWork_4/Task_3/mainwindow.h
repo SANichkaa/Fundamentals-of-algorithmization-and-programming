@@ -1,5 +1,3 @@
-#pragma once
-
 #include <QMainWindow>
 #include <qgraphicsscene.h>
 #include <qspinbox.h>
@@ -14,20 +12,21 @@ QT_END_NAMESPACE
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
-  
+
 public:
-  MainWindow();
+    MainWindow();
 
 private:
-  QList<int> getInpValues();
-  QList<int> compute(QList<int> inp);
+    QList<int> getInputValues();
+    QList<int> processInput(QList<int> inputValues);
+    QList<int> compute(QList<int> input);
 
 
 private slots:
-  void updateInpTable();
-  void updateOut();
+    void refreshInputTable();
+    void refreshOutput();
 
 
 protected:
-  Ui::MainWindow *ui;
+    Ui::MainWindow *ui;
 };

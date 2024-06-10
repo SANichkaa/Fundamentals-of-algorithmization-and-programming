@@ -11,13 +11,13 @@ CONFIG += c++17
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    my_hash_table.cpp \
-    my_stack.cpp
+    myhashtable.cpp \
+    mystack.cpp
 
 HEADERS += \
     mainwindow.h \
-    my_hash_table.h \
-    my_stack.h
+    myhashtable.h \
+    mystack.h
 
 FORMS += \
     mainwindow.ui

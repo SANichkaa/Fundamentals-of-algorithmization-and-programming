@@ -3,85 +3,85 @@
 #include <qspinbox.h>
 #include <qtablewidget.h>
 
-void swapInts(int *a, int *b) {
-  int tmp = *a;
-  *a = *b;
-  *b = tmp;
+void swapValues(int *val1, int *val2) {
+    int temp = *val1;
+    *val1 = *val2;
+    *val2 = temp;
 }
 
 MainWindow::MainWindow() : ui(new Ui::MainWindow) {
-  ui->setupUi(this);
+    ui->setupUi(this);
 
-  connect(ui->inpCnt, &QSpinBox::valueChanged, this,
-          &MainWindow::updateInpTable);
-  updateInpTable();
+    connect(ui->inputCount, &QSpinBox::valueChanged, this,
+            &MainWindow::refreshInputTable);
+    refreshInputTable();
 }
 
-void MainWindow::updateInpTable() {
-  int inpCnt = ui->inpCnt->value();
-  int oldCnt = ui->inpTable->rowCount();
-  ui->inpTable->setRowCount(inpCnt);
+void MainWindow::refreshInputTable() {
+    int inputCount = ui->inputCount->value();
+    int oldCount = ui->inputTable->rowCount();
+    ui->inputTable->setRowCount(inputCount);
 
-  for (int i = oldCnt; i < inpCnt; i++) {
-    QSpinBox *box = new QSpinBox();
-    box->setMinimum(1);
-    box->setMaximum(100000000);
-    box->setValue(rand() % 900 + 10);
-    connect(box, &QSpinBox::valueChanged, this, &MainWindow::updateOut);
-    ui->inpTable->setCellWidget(i, 0, box);
-  }
-
-  updateOut();
-}
-
-QList<int> MainWindow::getInpValues() {
-  QList<int> res;
-  res.resize(ui->inpTable->rowCount());
-  for (int i = 0; i < res.count(); i++) {
-    QSpinBox *box = (QSpinBox *)ui->inpTable->cellWidget(i, 0);
-    res[i] = box->value();
-  }
-  return res;
-}
-
-QList<int> MainWindow::compute(QList<int> inp) {
-  QList<int> res;
-
-  for (int i = 0; i < inp.count(); i += 3) {
-    if (i + 2 >= inp.count()) {
-      int avg = inp[i];
-      if (i + 1 < inp.count()) {
-        avg += inp[i + 1];
-        avg /= 2;
-      }
-      res.push_back(avg);
-      continue;
+    for (int i = oldCount; i < inputCount; i++) {
+        QSpinBox *spinBox = new QSpinBox();
+        spinBox->setMinimum(1);
+        spinBox->setMaximum(100000000);
+        spinBox->setValue(rand() % 900 + 10);
+        connect(spinBox, &QSpinBox::valueChanged, this, &MainWindow::refreshOutput);
+        ui->inputTable->setCellWidget(i, 0, spinBox);
     }
 
-    int a = inp[i];
-    int b = inp[i + 1];
-    int c = inp[i + 2];
+    refreshOutput();
+}
 
-    if (a > c)
-      swapInts(&a, &c);
+QList<int> MainWindow::getInputValues() {
+    QList<int> result;
+    result.resize(ui->inputTable->rowCount());
+    for (int i = 0; i < result.count(); i++) {
+        QSpinBox *spinBox = (QSpinBox *)ui->inputTable->cellWidget(i, 0);
+        result[i] = spinBox->value();
+    }
+    return result;
+}
 
-    if (a > b)
-      swapInts(&a, &b);
+QList<int> MainWindow::compute(QList<int> input) {
+    QList<int> result;
 
-    if (b > c)
-      swapInts(&b, &c);
+    for (int i = 0; i < input.count(); i += 3) {
+        if (i + 2 >= input.count()) {
+            int average = input[i];
+            if (i + 1 < input.count()) {
+                average += input[i + 1];
+                average /= 2;
+            }
+            result.push_back(average);
+            continue;
+        }
 
-    res.push_back(b);
-  }
-  return res;
+        int val1 = input[i];
+        int val2 = input[i + 1];
+        int val3 = input[i + 2];
+
+        if (val1 > val3)
+            swapValues(&val1, &val3);
+
+        if (val1 > val2)
+            swapValues(&val1, &val2);
+
+        if (val2 > val3)
+            swapValues(&val2, &val3);
+
+        result.push_back(val2);
+    }
+    return result;
 };
 
-void MainWindow::updateOut() {
-  QList<int> inps = getInpValues();
-  QList<int> res = compute(inps);
+void MainWindow::refreshOutput() {
+    QList<int> inputs = getInputValues();
+    QList<int> result = compute(inputs);
 
-  ui->outTable->setRowCount(res.count());
-  for (int i = 0; i < res.count(); i++) {
-    ui->outTable->setItem(i, 0, new QTableWidgetItem(QString::number(res[i])));
-  }
+    ui->outputTable->setRowCount(result.count());
+    for (int i = 0; i < result.count(); i++) {
+        ui->outputTable->setItem(i, 0, new QTableWidgetItem(QString::number(result[i])));
+    }
 }

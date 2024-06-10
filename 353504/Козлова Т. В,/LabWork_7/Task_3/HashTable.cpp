@@ -3,12 +3,6 @@
 #include <QString>
 
 template<typename T>
-int64_t HashTable<T>::hashFunction(int64_t key)
-{
-    return key % _size;
-}
-
-template<typename T>
 HashTable<T>::HashTable(size_t sizeTable)
     : table(new Stack<T>[sizeTable])
     , _size(sizeTable)
@@ -18,6 +12,12 @@ template<typename T>
 HashTable<T>::~HashTable()
 {
     delete[] table;
+}
+
+template<typename T>
+int64_t HashTable<T>::hashFunction(int64_t key)
+{
+    return key % _size;
 }
 
 template<typename T>

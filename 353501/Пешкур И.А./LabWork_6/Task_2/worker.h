@@ -2,11 +2,11 @@
 #define WORKER_H
 
 struct Worker {
-    int age;
-    char gender; //M - man and W - woman
-    bool works=false; //работает или нет в данный момент
-    double salary;
 
+    int age;
+    char gender;
+    bool works;
+    double salary;
     char* name;
     int vacationDays[2];
 

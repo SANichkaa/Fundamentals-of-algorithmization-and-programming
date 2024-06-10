@@ -24,17 +24,17 @@ public:
 
 private slots:
 
-    void on_pushButton_random_clicked();
+    void on_randomButton_clicked();
 
-    void on_pushButton_new_queue_clicked();
+    void on_newQueueButton_clicked();
 
-    void on_pushButton_front_clicked();
+    void on_frontButton_clicked();
 
-    void on_pushButton_back_clicked();
+    void on_backButton_clicked();
 
-    void on_pushButton_pop_clicked();
+    void on_dequeueButton_clicked();
 
-    void on_pushButton_push_clicked();
+    void on_enqueueButton_clicked();
 
 private:
     Ui::MainWindow *ui;

@@ -16,44 +16,44 @@ MainWindow::~MainWindow()
 
 void MainWindow::displayQueue(QListWidget *QueueListWidget,const Queue &queue) {
     QueueListWidget->clear();
-    for (int i = 0; i < queue.GetSize(); ++i) {
-        int num = queue.peek(i);
+    for (int i = 0; i < queue.getSize(); ++i) {
+        int num = queue.peekAt(i);
         QueueListWidget->addItem(QString::number(num));
     }
 }
 
-void MainWindow::on_pushButton_random_clicked()
+void MainWindow::on_randomButton_clicked()
 {
-    mainQueue.clear();
-    mainQueue.FillQueueRandomly(ui->spinBox->value());
+    mainQueue.clearQueue();
+    mainQueue.fillQueueRandomly(ui->spinBox->value());
     displayQueue(ui->newListWidget, mainQueue);
 }
 
-void MainWindow::on_pushButton_new_queue_clicked()
+void MainWindow::on_newQueueButton_clicked()
 {
     mainQueue.moveMinToFront();
     displayQueue(ui->newListWidget, mainQueue);
 }
 
-void MainWindow::on_pushButton_front_clicked()
+void MainWindow::on_frontButton_clicked()
 {
     ui->label_2->setText(QString::number(mainQueue.front()));
 }
 
-void MainWindow::on_pushButton_back_clicked()
+void MainWindow::on_backButton_clicked()
 {
     ui->label_2->setText(QString::number(mainQueue.back()));
 }
 
-void MainWindow::on_pushButton_pop_clicked()
+void MainWindow::on_dequeueButton_clicked()
 {
-    mainQueue.pop();
+    mainQueue.dequeue();
     displayQueue(ui->newListWidget, mainQueue);
 }
 
-void MainWindow::on_pushButton_push_clicked()
+void MainWindow::on_enqueueButton_clicked()
 {
-    mainQueue.push(ui->spinBox->value());
+    mainQueue.enqueue(ui->spinBox->value());
     displayQueue(ui->newListWidget, mainQueue);
 }
 
