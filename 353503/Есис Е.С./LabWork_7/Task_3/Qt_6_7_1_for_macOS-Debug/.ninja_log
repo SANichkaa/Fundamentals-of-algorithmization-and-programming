@@ -1,0 +1,38 @@
+# ninja log v5
+0	449	1717524649977365222	Lab7_Task3_autogen/timestamp	bd9724f3b06f0f36
+0	449	1717524649977365222	Lab7_Task3_autogen/mocs_compilation.cpp	bd9724f3b06f0f36
+0	449	1717524649977365222	/Users/daryastasiuk/Documents/BSUIR/ОАиП(2 term)/Lab7_Task3/build/Qt_6_7_1_for_macOS-Debug/Lab7_Task3_autogen/timestamp	bd9724f3b06f0f36
+0	449	1717524649977365222	/Users/daryastasiuk/Documents/BSUIR/ОАиП(2 term)/Lab7_Task3/build/Qt_6_7_1_for_macOS-Debug/Lab7_Task3_autogen/mocs_compilation.cpp	bd9724f3b06f0f36
+452	4059	1717524653606967011	CMakeFiles/Lab7_Task3.dir/my_stack.cpp.o	6480dc012abedd0b
+453	4169	1717524653717019974	CMakeFiles/Lab7_Task3.dir/my_hash_table.cpp.o	49866ec4bf3444ae
+450	4948	1717524654495119558	CMakeFiles/Lab7_Task3.dir/Lab7_Task3_autogen/mocs_compilation.cpp.o	93277f6f39f335f9
+450	4989	1717524654537716920	CMakeFiles/Lab7_Task3.dir/main.cpp.o	deae46915f59654b
+450	5314	1717524654859488918	CMakeFiles/Lab7_Task3.dir/mainwindow.cpp.o	1a1fad7fc56bcdf7
+5314	5670	1717524655210701381	Lab7_Task3.app/Contents/MacOS/Lab7_Task3	3e8fd8ca243fa2ff
+18	991	1717534959631272000	Lab7_Task3_autogen/timestamp	bd9724f3b06f0f36
+18	991	1717534959631272000	Lab7_Task3_autogen/mocs_compilation.cpp	bd9724f3b06f0f36
+18	991	1717534959631272000	/Users/daryastasiuk/Documents/BSUIR/ОАиП(2 term)/Lab7_Task3/build/Qt_6_7_1_for_macOS-Debug/Lab7_Task3_autogen/timestamp	bd9724f3b06f0f36
+18	991	1717534959631272000	/Users/daryastasiuk/Documents/BSUIR/ОАиП(2 term)/Lab7_Task3/build/Qt_6_7_1_for_macOS-Debug/Lab7_Task3_autogen/mocs_compilation.cpp	bd9724f3b06f0f36
+995	5474	1717534964130263434	CMakeFiles/Lab7_Task3.dir/my_hash_table.cpp.o	49866ec4bf3444ae
+991	6922	1717534965572387327	CMakeFiles/Lab7_Task3.dir/Lab7_Task3_autogen/mocs_compilation.cpp.o	93277f6f39f335f9
+993	6983	1717534965646742666	CMakeFiles/Lab7_Task3.dir/main.cpp.o	deae46915f59654b
+994	7133	1717534965792310859	CMakeFiles/Lab7_Task3.dir/mainwindow.cpp.o	1a1fad7fc56bcdf7
+7133	7644	1717534966302996752	Lab7_Task3.app/Contents/MacOS/Lab7_Task3	3e8fd8ca243fa2ff
+10	120	1717535054232578599	Lab7_Task3_autogen/timestamp	bd9724f3b06f0f36
+10	120	1717535054232578599	Lab7_Task3_autogen/mocs_compilation.cpp	bd9724f3b06f0f36
+10	120	1717535054232578599	/Users/daryastasiuk/Documents/BSUIR/ОАиП(2 term)/Lab7_Task3/build/Qt_6_7_1_for_macOS-Debug/Lab7_Task3_autogen/timestamp	bd9724f3b06f0f36
+10	120	1717535054232578599	/Users/daryastasiuk/Documents/BSUIR/ОАиП(2 term)/Lab7_Task3/build/Qt_6_7_1_for_macOS-Debug/Lab7_Task3_autogen/mocs_compilation.cpp	bd9724f3b06f0f36
+123	1851	1717535055954518720	CMakeFiles/Lab7_Task3.dir/mainwindow.cpp.o	1a1fad7fc56bcdf7
+1851	2153	1717535056251642142	Lab7_Task3.app/Contents/MacOS/Lab7_Task3	3e8fd8ca243fa2ff
+18	135	1717535082294112398	Lab7_Task3_autogen/timestamp	bd9724f3b06f0f36
+18	135	1717535082294112398	Lab7_Task3_autogen/mocs_compilation.cpp	bd9724f3b06f0f36
+18	135	1717535082294112398	/Users/daryastasiuk/Documents/BSUIR/ОАиП(2 term)/Lab7_Task3/build/Qt_6_7_1_for_macOS-Debug/Lab7_Task3_autogen/timestamp	bd9724f3b06f0f36
+18	135	1717535082294112398	/Users/daryastasiuk/Documents/BSUIR/ОАиП(2 term)/Lab7_Task3/build/Qt_6_7_1_for_macOS-Debug/Lab7_Task3_autogen/mocs_compilation.cpp	bd9724f3b06f0f36
+141	1931	1717535084081109773	CMakeFiles/Lab7_Task3.dir/mainwindow.cpp.o	1a1fad7fc56bcdf7
+1931	2229	1717535084373976283	Lab7_Task3.app/Contents/MacOS/Lab7_Task3	3e8fd8ca243fa2ff
+17	163	1717536402432431270	Lab7_Task3_autogen/timestamp	bd9724f3b06f0f36
+17	163	1717536402432431270	Lab7_Task3_autogen/mocs_compilation.cpp	bd9724f3b06f0f36
+17	163	1717536402432431270	/Users/daryastasiuk/Documents/BSUIR/ОАиП(2 term)/Lab7_Task3/build/Qt_6_7_1_for_macOS-Debug/Lab7_Task3_autogen/timestamp	bd9724f3b06f0f36
+17	163	1717536402432431270	/Users/daryastasiuk/Documents/BSUIR/ОАиП(2 term)/Lab7_Task3/build/Qt_6_7_1_for_macOS-Debug/Lab7_Task3_autogen/mocs_compilation.cpp	bd9724f3b06f0f36
+169	2114	1717536404372232442	CMakeFiles/Lab7_Task3.dir/mainwindow.cpp.o	1a1fad7fc56bcdf7
+2115	2454	1717536404710655275	Lab7_Task3.app/Contents/MacOS/Lab7_Task3	3e8fd8ca243fa2ff

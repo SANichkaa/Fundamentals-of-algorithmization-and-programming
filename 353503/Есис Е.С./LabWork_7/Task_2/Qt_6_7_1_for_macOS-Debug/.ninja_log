@@ -1,0 +1,15 @@
+# ninja log v5
+1	836	1717574017560591166	Lab7_Task2_autogen/timestamp	f0f610fca4b14014
+1	836	1717574017560591166	Lab7_Task2_autogen/mocs_compilation.cpp	f0f610fca4b14014
+1	836	1717574017560591166	/Users/daryastasiuk/Documents/BSUIR/ОАиП(2 term)/Lab7_Task2/build/Qt_6_7_1_for_macOS-Debug/Lab7_Task2_autogen/timestamp	f0f610fca4b14014
+1	836	1717574017560591166	/Users/daryastasiuk/Documents/BSUIR/ОАиП(2 term)/Lab7_Task2/build/Qt_6_7_1_for_macOS-Debug/Lab7_Task2_autogen/mocs_compilation.cpp	f0f610fca4b14014
+840	4864	1717574021617468130	CMakeFiles/Lab7_Task2.dir/tree_node.cpp.o	9bd604746515c34a
+842	5458	1717574022210504845	CMakeFiles/Lab7_Task2.dir/my_tree.cpp.o	2519904bb595685e
+836	7269	1717574024018186711	CMakeFiles/Lab7_Task2.dir/Lab7_Task2_autogen/mocs_compilation.cpp.o	62e6e06bb86f45fb
+838	7348	1717574024079393909	CMakeFiles/Lab7_Task2.dir/main.cpp.o	3b41231c341b539c
+79	213	1717574065496548803	Lab7_Task2_autogen/timestamp	f0f610fca4b14014
+79	213	1717574065496548803	Lab7_Task2_autogen/mocs_compilation.cpp	f0f610fca4b14014
+79	213	1717574065496548803	/Users/daryastasiuk/Documents/BSUIR/ОАиП(2 term)/Lab7_Task2/build/Qt_6_7_1_for_macOS-Debug/Lab7_Task2_autogen/timestamp	f0f610fca4b14014
+79	213	1717574065496548803	/Users/daryastasiuk/Documents/BSUIR/ОАиП(2 term)/Lab7_Task2/build/Qt_6_7_1_for_macOS-Debug/Lab7_Task2_autogen/mocs_compilation.cpp	f0f610fca4b14014
+219	7920	1717574073183463964	CMakeFiles/Lab7_Task2.dir/mainwindow.cpp.o	a14c0de432496aed
+7921	8474	1717574073735998550	Lab7_Task2.app/Contents/MacOS/Lab7_Task2	79437c1cd0ac9702

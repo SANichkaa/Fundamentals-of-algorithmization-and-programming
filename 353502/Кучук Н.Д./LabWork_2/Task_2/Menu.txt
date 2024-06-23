@@ -1,0 +1,6 @@
+Beer	Alcohol	3.5
+Borsch	Soup	3.0
+Pork chop	Meat	3.5
+Chicken chop	Meat	2.0
+Beef chop	Meat	4.2
+Chicken burger	Burger	3.4
